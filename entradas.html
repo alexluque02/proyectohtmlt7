@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="bootstrap.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>Document</title>
   <style type="text/css">
     .titulopag {
@@ -44,10 +45,10 @@
       padding: 20px;
     }
   </style>
+
 </head>
 
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -245,10 +246,10 @@
               <label class="form-check-label" for="flexSwitchCheckDefault">Mayor de Edad</label>
             </div>
           </fieldset>
-          <button type="submit" class="btn btn-primary mt-3">Finalizar Compra</button>
+          <button type="submit" class="btn btn-primary mt-3" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="No olvides revisar tu correo electrónico" data-bs-original-title="Compra realizada con éxito" aria-describedby="popover140759">Finalizar Compra</button>
         </fieldset>
       </form>
-      <div class="alert alert-dismissible alert-primary col-lg-5 col-sm-12">
+      <div class="alert alert-dismissible alert-primary offset-lg-1 col-lg-4 col-sm-12">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         <strong>¡Atento!</strong> <br> Una vez realizada la compra, recibirá un correo electrónico con su entrada en
         formato PDF y QR para el evento. Recuerde llevar su entrada impresa o en su dispositivo móvil para poder acceder
@@ -285,10 +286,10 @@
               Patrocinadores
             </h6>
             <p>
-              <img src="img/cruzcampo.png" alt="" style="width: 75%;">
+              <img src="img/cruzcampo.png" alt="logo cruzcampo" style="width: 75%;">
             </p>
             <p>
-              <img src="img/josecuervo.png" alt="" style="width: 75%;">
+              <img src="img/josecuervo.png" alt="logo cose cuervo" style="width: 75%;">
             </p>
 
           </div>
@@ -342,5 +343,10 @@
     <!-- Copyright -->
   </footer>
 </body>
-
+<script>
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+  </script>
 </html>

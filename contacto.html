@@ -7,108 +7,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
     <title>Document</title>
+    <style type="text/css">
+    </style>
 </head>
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!--Section: Contact v.2-->
-    <section class="mb-4">
-
-        <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
-            directly. Our team will come back to you within
-            a matter of hours to help you.</p>
-
-        <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Your name</label>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="inicio.html">
+                    <img src="img/logopuro.png" alt="Logo Puro Latino" style="width: 190px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                    aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="inicio.html">Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="entradas.html">Entradas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Separated link</a>
                             </div>
-                        </div>
-                        <!--Grid column-->
-
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Your email</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Subject</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                    <!--Grid row-->
-                    <div class="row">
-
-                        <!--Grid column-->
-                        <div class="col-md-12">
-
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2"
-                                    class="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                </form>
-
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="status"></div>
             </div>
-            <!--Grid column-->
+        </nav>
+    </header>
+    <main>
+        <!--Section: Contact v.2-->
+        <section class="mb-4 container w-100">
 
-            <!--Grid column-->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>San Francisco, CA 94126, USA</p>
-                    </li>
+            <!--Section heading-->
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contacta con nosotros</h2>
+            <!--Section description-->
+            <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna pregunta? No dudes en contactarnos. Nuestro equipo te responderá de vuelta lo antes posible.</p>
 
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+ 01 234 567 89</p>
-                    </li>
+            <div class="row">
 
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@mdbootstrap.com</p>
-                    </li>
-                </ul>
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5 pl-5 p-lg-5 p-4">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                    <label for="name" class="name">Nombre y Apellidos</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="email">Correo electrónico</label>
+                                </div>
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control mt-lg-3">
+                                    <label for="subject" class="subject">Asunto</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Grid row-->
+                        <div class="row">
+
+                            <!--Grid column-->
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea mt-lg-3"></textarea>
+                                    <label for="message">Escribe tu consulta</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid row-->
+
+                        <div class="text-center text-md-left">
+                            <button class="btn btn-primary mt-2" type="submit">Enviar Consulta</button>
+                        </div>
+                    </form>
+                    <div class="status"></div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-3 text-center mt-lg-5">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>Madrid, MA 28008, ES</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 34 000000000</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>info@example.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
             </div>
-            <!--Grid column-->
-
-        </div>
+    </main>
 
     </section>
     <!--Section: Contact v.2-->
+    <footer class="text-center text-lg-start text-muted">
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="piePagina">
+            <div class="container text-center text-md-start mt-4">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Puro Latino
+                        </h6>
+                        <p>
+                            Puro Latino es una empresa dedicada a la organización de eventos de música urbana,
+                            especialmente de reggaetón, en los que participan reconocidos cantantes y artistas del
+                            género.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Patrocinadores
+                        </h6>
+                        <p>
+                            <img src="img/cruzcampo.png" alt="" style="width: 75%;">
+                        </p>
+                        <p>
+                            <img src="img/josecuervo.png" alt="" style="width: 75%;">
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Enlaces útiles
+                        </h6>
+                        <p>
+                            <a href="inicio.html" class="text-reset">Inicio</a>
+                        </p>
+                        <p>
+                            <a href="entradas.html" class="text-reset">Entradas</a>
+                        </p>
+                        <p>
+                            <a href="galeria.html" class="text-reset">Contacto</a>
+                        </p>
+                        <p>
+                            <a href="contacto.html" class="text-reset">Galería de fotos</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fas fa-home me-3"></i> Madrid, MA 28008, ES</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 34 000000000</p>
+                        <p><i class="fas fa-print me-3"></i> + 34 000000000</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://purolatino.es/sevilla/">https://purolatino.es/sevilla/</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>
